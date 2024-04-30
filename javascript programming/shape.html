@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maindiv {
+          width:25rem;
+          height:25rem;
+          display: table;
+          margin: 0 25%;
+          border: 1px solid black;
+        }
+        #btn {
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+        }
+        .btns {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id ="maindiv">
+        <div id="btn">
+            <button id="cir" class="btns" onclick="circle()">CIRCLE</button>
+            <button id="sqr" class="btns" onclick="square()">SQUARE</button>
+            <button id="rect" class="btns" onclick="rectangle()">RECTANGLE</button>
+            <button id="tri" class="btns" onclick="triangle()">TRIANGLE</button>
+        </div>
+    <br>
+    <div id="div1"></div>
+    <br>
+    <div></div>
+    <br>
+    <div id="div2"></div>
+    <br>
+    <div></div>
+    <br>
+    <div id="div3"></div>
+    <br>
+    <div></div>
+    <br>
+    <div id="div4"></div>
+    </div>
+    
+</body>
+<script>
+    function circle(){
+        document.getElementById("div1").style.width= "100px";
+        document.getElementById("div1").style.height= "100px";
+        document.getElementById("div1").style.borderColor= "#0000";
+        document.getElementById("div1").style.border= "solid";
+        document.getElementById("div1").style.borderRadius= "50px";
+
+    }
+    function square(){
+        document.getElementById("div2").style.width= "100px";
+        document.getElementById("div2").style.height= "100px";
+        document.getElementById("div2").style.borderColor= "#0000";
+        document.getElementById("div2").style.border= "solid";
+        // document.getElementById("div1").style.borderRadius= "100px";
+
+    }
+    function rectangle(){
+        document.getElementById("div3").style.width= "200px";
+        document.getElementById("div3").style.height= "100px";
+        document.getElementById("div3").style.borderColor= "#0000";
+        document.getElementById("div3").style.border= "solid";
+        // document.getElementById("div1").style.borderRadius= "100px";
+
+    }
+    function triangle(){
+        document.getElementById("div4").style.width= "0";
+        document.getElementById("div4").style.height= "0";
+        document.getElementById("div4").style.borderLeft= "25px solid transparent";
+        document.getElementById("div4").style.borderRight= "25px solid transparent";
+        document.getElementById("div4").style.borderBottom= "50px solid black";
+        document.getElementById("div5").style.backgroundColor="white";
+      
+        // document.getElementById("div1").style.borderRadius= "100px";
+
+    }
+</script>
+</html>

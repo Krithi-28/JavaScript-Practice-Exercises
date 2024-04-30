@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id ="bt1" onclick="rand()">Random</button>
+    <h2 id="ran"></h2>
+    <h2 id ="mul"></h2>
+</body>
+<script>
+    function rand() {
+        var val=document.getElementById("ran")
+        var multiply=document.getElementById("mul")
+        r=Math.random(0,1)
+        val.textContent=r
+        prod=r*10
+        multiply.textContent=prod
+    }
+    
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ding {
+            color:rgb(3, 221, 116);
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+    <h3 id="demo"></h3>
+    <h1 class="disk"></h1>
+    <h1 id="durr"></h1>
+    <h1 id="name">element</h1>
+    <input type="submit" value="Submit" onclick="func()"> 
+    <h1 id="div1">good morning</h1>
+</body>
+<script>
+    document.getElementsByTagName("p")[0].innerHTML="good";
+    document.getElementById("demo").innerHTML="hello";
+    document.getElementsByClassName("disk")[0].innerHTML="bye";
+    document.getElementById("durr").innerHTML="krithiga";
+    document.getElementById("durr").style.color="blue";
+
+    function func(){
+        document.getElementById("name").setAttribute("class","ding");
+    }
+    document.body.onload=addElement;
+    function addelement()
+    {
+        const newhead=document.createElement("h1");
+        const newcontent=document.createTextNode("good night");
+        newhead.appendChild(newcontent);
+        const currenthead=document.getElementById("div1");
+        document.body.insertBefore(newhead,currenthead);
+    }
+</script>
+</html>

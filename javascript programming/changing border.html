@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 5px solid black;
+            width:100px;
+            height:100px;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" onmouseover="changeborder()" onmouseout="changeborder1()"></div>
+</body>
+<script>
+    function changeborder() {
+        a=document.getElementById("div1").style.borderColor="#fc0303";
+    }
+    function changeborder1() {
+        a=document.getElementById("div1").style.borderColor="#0a0000";
+    }
+</script>
+</html>

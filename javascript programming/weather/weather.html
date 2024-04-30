@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+</head>
+<body>
+    <form onsubmit="return myfun()">
+        <!-- <input type="text" id="weather" placeholder="enter the weather today"> -->
+        <label for="season">what is your weather today?</label>
+        <select id ='weather'>
+            <option value="rain">Rain</option>
+            <option value="sun">Sun</option>
+            <option value="wind">Wind</option>
+            <option value="leaf">Leaf</option>
+            <option value="snow">Snow</option>
+        </select>
+        <input type="submit" value="Submit"> 
+
+    </form>
+</body>
+<script>
+    function myfun()
+    {
+        var weather=document.getElementById('weather').value;
+        switch(weather){
+            case 'rain':
+                window.alert('its rainy season');
+                break;
+            case 'sun':
+                window.alert("its summer season")
+                break;
+            case 'wind':
+                window.alert("its autumn season");
+                break;
+            case 'leaf':
+                window.alert("its spring season");
+                break;
+            case 'snow':
+                window.alert("its winter season");
+                break;
+            
+        }
+
+
+    }
+
+</script>
+</html>
